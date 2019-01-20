@@ -7,7 +7,6 @@ with open('reviews.txt', 'r') as log:
 		if count + 10000000 == 0:
 			print(len(data))
 
-x = print(len(data)) #印出清單資料
 sum_len=0
 for d in data:
 	sum_len += len(d)
@@ -26,5 +25,6 @@ good = []
 for d in data:
 	if 'good' in d:
 		good.append(d)
-print('一共有', good, '筆資料')
+print('一共有', len(good), '筆資料')
 print(good[0])
+print(good[1])
